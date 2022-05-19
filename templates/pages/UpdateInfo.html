@@ -1,0 +1,86 @@
+{% extends 'nav.html'  %}
+{% load static %}
+{% block content %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <title>
+        Update
+    </title>
+</head>
+
+<body>
+    
+    <div class="container" style="background-color: #f5f2f0; height:100%"></div>
+        <!-- <nav class="nav">
+            <div class="elements">
+                <p class="navigation">Home</p>
+                <p class="navigation">Add Student</p>
+                <p class="navigation">Update</p>
+                <p class="navigation">Search</p>
+                <p class="navigation">Department</p>
+                <p class="navigation">Login</p>
+            </div>
+        </nav> -->
+        <table class="table1">
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>Mohamed</td>
+                <td>20100000</td>
+                <td>20/10/2030</td>
+                <td>Male</td>
+                <td>CS</td>
+            </tr>
+            <tr>
+                <td>Youssef</td>
+                <td>20100001</td>
+                <td>20/10/2030</td>
+                <td>Male</td>
+                <td>IS</td>
+            </tr>
+            <tr>
+                <td>Noha</td>
+                <td>20100002</td>
+                <td>20/10/2030</td>
+                <td>Female</td>
+                <td>IS</td>
+            </tr>
+            <tr>
+                <td>Manal</td>
+                <td>20100003</td>
+                <td>20/10/2030</td>
+                <td>Female</td>
+                <td>DS</td>
+            </tr>
+        </table>
+    
+        <div class="Search_Bar">
+            <input type="text" placeholder="Search..">
+        </div>
+        
+        <button class="btnSearch" type="submit">
+            &#128270
+        </button>
+        
+        
+            <button class="updateBtn">Update</button> &nbsp;
+            <button class="deleteBtn">Delete</button><br>
+            
+    </div>
+    
+
+    <script src="{% static 'JavaScript/main.js' %}"></script>
+</body>
+
+</html>
+{% endblock content %}
